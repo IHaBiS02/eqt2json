@@ -57,10 +57,13 @@ function convertEqtToJson(filename, eqtContent) {
 function parsePreamp(lines) {
     for (const line of lines) {
         const trimmedLine = line.trim();
-        if (trimmedLine.startsWith('Preamp:')) {
+        if (trimmedLine.toUpperCase().startsWith('PREAMP')) {
             const parts = trimmedLine.split(/\s+/);
             if (parts.length >= 2) {
-                return parseFloat(parts[1]) || 0.0;
+                const preampValue = parseFloat(parts[1]);
+                if (!isNaN(preampValue)) {
+                    return preampValue;
+                }
             }
         }
     }
