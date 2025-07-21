@@ -1,0 +1,8 @@
+Filter: ON PK Fc 100 Hz Gain 0 dB Q 10
+Filter: ON LP Fc 100 Hz
+Filter: ON HP Fc 100 Hz
+Filter: ON BP Fc 100 Hz Q 10
+Filter: ON LS Fc 100 Hz Gain 0 dB
+Filter: ON HS Fc 100 Hz Gain 0 dB
+Filter: ON NO Fc 100 Hz
+Filter: ON AP Fc 100 Hz Q 10
